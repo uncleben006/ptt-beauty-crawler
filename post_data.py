@@ -23,6 +23,6 @@ with open('data.json') as json_file:
     # 以 section 為單位打入 api
     for section in book:
         print(len(section))
-        response = requests.post('http://127.0.0.1:5000/api/', json.dumps(section, ensure_ascii = False).encode('utf-8'))
+        response = requests.post('https://api-ptt-beauty.herokuapp.com/api/', json.dumps(section, ensure_ascii = False).encode('utf-8'))
         # print(data, '\n')
         print(response.status_code)

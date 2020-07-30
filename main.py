@@ -37,7 +37,7 @@ def get_post_list(day_bias = 7):
 
 
 
-post_list = get_post_list(60)
+post_list = get_post_list(2)
 
 print("\n\n post_list:", post_list)
 
